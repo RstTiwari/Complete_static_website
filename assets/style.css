@@ -177,6 +177,7 @@ header .logo{
     position: relative;
     background-color:rgb(243, 238, 217);
     padding: 20px 20px;
+    z-index: -1;
 }
 .grid{
     display: grid;
@@ -221,12 +222,13 @@ footer{
 
 }
 .footer{
-    display: flex;
+    display: grid;
+    grid-template-columns: auto auto auto;
     justify-content: space-between;
-    flex-wrap: wrap;
-    align-items: center;
+    
+    align-items: initial;
     background-color: hsl(230, 89%, 22%);
-    padding: 100px 100px;
+    padding: 100px 250px;
     width: 100%;
 }
  .footer ul li{
@@ -263,7 +265,7 @@ address{
  
 }
   footer ion-icon{
-    z-index:-9;
+    z-index:-1;
 }
 .social__icons ul li{
     list-style: none;
@@ -273,6 +275,7 @@ address{
     display: inline-block;
     padding: 0 30px;
     color:white;
+    z-index: -1;
   
 }  
 .trade__mark{
@@ -319,13 +322,14 @@ padding-top: 30px;
         align-items: center;
         bottom:0;
         right:0;
-        font-size:3em;
+        font-size:3.5em;
         cursor: pointer;
         position: fixed;
-        
         width:30px;
         height:30px;
         z-index:9999;
+        
+      
         
 
         
@@ -366,7 +370,7 @@ padding-top: 30px;
         background-color: black;
         width: 50%;
         height: 100%;
-        z-index:999 ;
+        z-index:1000;
 
 
     }
@@ -417,28 +421,31 @@ padding-top: 30px;
       
       
     }
+    .footer{
+        display: grid;
+        grid-template-columns: auto auto;
+        padding: 50px 50px;
+    }
+    .footer .add{
+        place-content: center;
+
+    }
+   .footer__content{
+       margin-bottom: 30px;
+   }
+   
+
+
     }
        
     
         
    
-@media screen and(max-width:450px) {
-    .page__inoformation .quote{
-        font-size: small;
-        word-wrap: normal;
-    }
 
-    .footer{
-        display: flex;
-        flex-direction: row;
-        flex-wrap: wrap;
-        justify-content: space-evenly;
-        position: relative;
-    }
 
   
     
-}
+
 
   
 
