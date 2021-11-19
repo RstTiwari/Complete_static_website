@@ -1,0 +1,445 @@
+*{
+    margin: 0 ;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+  
+
+
+}
+body{
+
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+header{
+    position: sticky;
+    width: 100%;
+    margin: 0 0;
+  
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: transparent;
+  
+
+}
+
+header .logo{
+    position: relative;
+    color: hsl(26, 100%, 55%);
+    text-decoration: none;
+    font-size: 3em;
+    font-weight: 700;
+    position: sticky;
+    margin-left: 20px;
+
+}
+.group{
+    position: relative;
+    display: flex;
+    color: hsl(26, 100%, 55%);
+}
+.group .navigation ,
+.group .action {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    color: hsl(26, 100%, 55%);
+    
+}
+
+.group ul li{
+    list-style: none;
+    margin-right: 20px;
+
+}
+
+.group ul li a{
+    text-decoration: none;
+    color:white;
+    margin-left: 30px;
+}
+
+.group ul li a:hover{
+    color:blue;
+    border-bottom: 3px solid hsl(26, 100%, 55%);
+    transform: scaleY();
+}
+
+
+.group .action {
+    margin-left: 20px;
+}
+
+.group .action li a {
+    font-size: 1.53em;
+}
+
+
+
+
+.menuToggel{
+    display: none;
+}
+/* back ground design start from here*/
+.bg{
+    /* The image used */
+   
+  
+      /* Full height */
+    height: 650px; 
+  
+    /*Center and scale the image nicely */
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+  }
+  /*button rippel effect*/
+  .btn{
+      float: right;
+      margin-top: 10px;
+      margin-right: 100px;
+      z-index: -1;
+     
+  }
+  .btn__rippel{
+      border: none;
+      outline: none;
+      width: 10px;
+      height: 10px;
+      border-radius: 50%;
+      display: block;
+      background-color:rgb(143, 89, 79);
+      
+      font-size: 18px;
+      border: 1px solid white;
+      z-index: -111;
+      display: grid;
+      place-items: center;
+      cursor: pointer;
+      animation-name: ripple;
+      animation-duration: 1.5s;
+      animation-iteration-count: infinite;
+      animation-fill-mode: both;
+  }
+  ion-icon{
+      z-index: -1;
+  }
+  @keyframes ripple {
+      0% {
+          box-shadow: 0 0 0 0 rgba(201, 181, 93, 0.267), 0 0 0 0 rgba(19, 209, 82, 0.267)
+      }
+
+      50% {
+        box-shadow: 0 0 0 40px rgba(160, 189, 207, 0.267), 0 0 0 40px #FFF4
+    }
+
+    100% {
+        box-shadow: 0 0 0 40px #FFF4, 0 0 0 40px #FFF4
+    }
+  }
+  .page__inoformation{
+   
+      z-index: -1;
+      margin-left: 20px;
+      margin-top: 80px;
+      padding: 20px;
+  
+    
+
+     
+    
+    
+      
+      
+    }
+    
+  .page__inoformation > p{
+    color: hsl(26, 100%, 55%);
+    margin-bottom: 20px;
+}
+.page__inoformation .quote{
+    color: white;
+    margin-bottom: 30px;
+    font-size: 80px;
+  
+}
+.page__inoformation small{
+    color: ghostwhite;
+  
+}
+
+/* project Information Design*/
+.project__information{
+    width: 100%;
+    position: relative;
+    background-color:rgb(243, 238, 217);
+    padding: 20px 20px;
+}
+.grid{
+    display: grid;
+    grid-template-columns: 50% 50%;
+    padding: 25px 25px;
+    grid-column-gap:10px;
+    grid-row-gap:10px;
+    box-shadow: blanchedalmond;
+    
+    
+  
+}
+h4{
+    color: white;
+}
+.grid__item{
+    background-color: black;
+    padding: 10px 10px;
+}
+.inner__grid{
+    display: grid;
+    grid-template-columns: 30% 70%;
+    padding: 30px;
+    justify-content: space-between;
+    align-self: center;
+   
+
+    color:white;
+}
+
+   
+
+  
+   
+
+
+
+/*Footer Design*/
+footer{
+    background-color: hsl(230, 89%, 22%);
+  
+
+}
+.footer{
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    align-items: center;
+    background-color: hsl(230, 89%, 22%);
+    padding: 100px 100px;
+    width: 100%;
+}
+ .footer ul li{
+     list-style: none;
+ }
+    
+.about__us{
+    color:white;
+    padding: 20px;
+    text-indent: 20px;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    
+}
+.footer__content  ul li{
+    padding: 10px;
+    color: whitesmoke;
+}
+.footer_heading{
+    color: hsl(26, 100%, 55%);
+}
+address{
+    padding: 20px;
+    color: white;
+}
+.social__icons{
+   place-content:center;
+   display: flex;
+   background-color: hsl(230, 89%, 22%);
+   z-index: -111;
+   padding: 20px 0;
+   border-bottom: 3px solid hsl(26, 100%, 55%);
+
+
+ 
+}
+  footer ion-icon{
+    z-index:-9;
+}
+.social__icons ul li{
+    list-style: none;
+    display: flex;
+    flex-direction: column;
+    font-size: 1.5rem;
+    display: inline-block;
+    padding: 0 30px;
+    color:white;
+  
+}  
+.trade__mark{
+
+text-align: center;
+color: white;
+padding-top: 30px;
+}
+
+
+  
+  
+
+
+
+
+@media screen and (max-width:950px) {
+
+    body{
+        background-position: center;
+        background-size: cover;
+    }
+   
+    
+    header{
+        padding: 0 0;
+    }
+   header .logo{
+        font-size: 2rem;
+        margin-left: 15px;
+    }
+   
+    
+   
+    .group .navigation{
+        display: none;
+    }
+    .group ul li {
+        margin-left: 10px;
+    }
+    .menuToggel{
+        display:flex;
+        justify-content: center;
+        align-items: center;
+        bottom:0;
+        right:0;
+        font-size:3em;
+        cursor: pointer;
+        position: fixed;
+        
+        width:30px;
+        height:30px;
+        z-index:9999;
+        
+
+        
+    
+       
+       
+    }
+    .menuToggel ion-icon{
+        position: absolute;
+        --ionicon-stroke-width: 20px;
+        display: none;
+        position: fixed;
+    }
+     .menuToggel.active   ion-icon:nth-child(1){
+        display:none ;
+    }
+
+    .menuToggel.active   ion-icon:nth-child(2){
+        display:block ;
+    }
+    .menuToggel   ion-icon:nth-child(1){
+        display:block ;
+    }
+
+    .menuToggel   ion-icon:nth-child(2){
+        display:none ;
+    }
+   
+    .navigation.active{
+        display: flex;
+        position: fixed;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        top: 0;
+        right:0;
+        
+        background-color: black;
+        width: 50%;
+        height: 100%;
+        z-index:999 ;
+
+
+    }
+    .group ul.navigation  li a{
+        padding:20px ;
+        display: inline-block;
+        font-size: 1em;
+        margin-top: 25px;
+    }
+   
+    /* page information Design Started */
+    .page__inoformation .quote{
+        color: white;
+        margin-top: 50px;
+        font-size: 35px;
+      
+    }
+    .page__inoformation  small{
+        margin-top: 20px;
+    }
+
+    .grid{
+        display: grid;
+        grid-template-columns: 100%;
+      
+        grid-column-gap:10px;
+        grid-row-gap:10px;
+        box-shadow: blanchedalmond;
+        
+        
+      
+    }
+    h4{
+        color: white;
+    }
+    .grid__item{
+        background-color: black;
+    }
+ 
+    .inner__grid{
+        display: grid;
+        grid-template-columns: 100%;
+        
+        justify-content:center;
+        align-self: center;
+        color:white;
+        width: 100%;
+      
+      
+    }
+    }
+       
+    
+        
+   
+@media screen and(max-width:450px) {
+    .page__inoformation .quote{
+        font-size: small;
+        word-wrap: normal;
+    }
+
+    .footer{
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: space-evenly;
+        position: relative;
+    }
+
+  
+    
+}
+
+  
+
+ 
