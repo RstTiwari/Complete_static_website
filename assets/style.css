@@ -58,10 +58,18 @@ header .logo{
 
 .group ul li a{
     text-decoration: none;
-    color:white;
+    color:hsl(26, 100%, 55%);
     margin-left: 30px;
 }
 
+@media screen  and (max-width:650px) {
+    .group ul li a {
+            text-decoration: none;
+            color: hsl(26, 100%, 55%);
+            margin-left: 30px;
+        }
+    
+}
 .group ul li a:hover{
     color:blue;
     border-bottom: 3px solid hsl(26, 100%, 55%);
@@ -142,18 +150,10 @@ header .logo{
   }
   .page__inoformation{
    
-      z-index: -1;
+      z-index: 1;
       margin-left: 20px;
       margin-top: 80px;
-      padding: 20px;
-  
-    
-
-     
-    
-    
-      
-      
+      padding: 20px;   
     }
     
   .page__inoformation > p{
@@ -161,7 +161,7 @@ header .logo{
     margin-bottom: 20px;
 }
 .page__inoformation .quote{
-    color: white;
+    color: hsl(26, 100%, 55%);
     margin-bottom: 30px;
     font-size: 80px;
   
@@ -181,7 +181,7 @@ header .logo{
 }
 .grid{
     display: grid;
-    grid-template-columns: 50% 50%;
+    grid-template-columns:  auto auto auto;
     padding: 25px 25px;
     grid-column-gap:10px;
     grid-row-gap:10px;
@@ -191,72 +191,22 @@ header .logo{
   
 }
 h4{
-    color: white;
+    color: rgb(12, 10, 10);
 }
 .grid__item{
-    background-color: black;
+     
     padding: 10px 10px;
 }
-.inner__grid{
-    display: grid;
-    grid-template-columns: 30% 70%;
-    padding: 30px;
-    justify-content: space-between;
-    align-self: center;
-   
-
-    color:white;
+.project_cat{
+ width:  auto;
 }
 
-/*carpusel Desing ans styling*/
-.slideshow-container{
-    max-width:1500px;
-    position: relative;
-    width: 100%;
 
-  
-}
-.mySlides{
-    display: none;
-    z-index: -1;
-   
-   
-}
+
 img {vertical-align: middle;
 z-index: -1;}
    
-/* Next & previous buttons */
-.prev, .next {
-    cursor: pointer;
-    position: absolute;
-    top: 50%;
-    width: auto;
-    margin-top: -22px;
-    padding: 16px;
-    color: white;
-    font-weight: bold;
-    font-size: 18px;
-    transition: 0.6s ease;
-    border-radius: 0 3px 3px 0;
-    user-select: none;
-  }
-  
-  /* Position the "next button" to the right */
-  .next {
-    right: 0;
-    border-radius: 3px 0 0 3px;
-  }
-.dot {
-    cursor: pointer;
-   
-    width: 15px;
-    height: 15px;
-    background-color:rgb(145, 138, 138); 
-    border-radius: 50%;
-    display: inline-block;
-    transition:0.6s ease;
 
-}
 
    
 .active ,.dot:hover{
@@ -441,46 +391,32 @@ padding-top: 30px;
         margin-top: 25px;
     }
    
+    .page__inoformation{
+        display: block;
+    }
     /* page information Design Started */
     .page__inoformation .quote{
-        color: white;
         margin-top: 50px;
         font-size: 35px;
       
     }
-    .page__inoformation  small{
-        margin-top: 20px;
-    }
-
+  
     .grid{
         display: grid;
-        grid-template-columns: 100%;
-      
+        grid-template-columns: auto;
         grid-column-gap:10px;
         grid-row-gap:10px;
-        box-shadow: blanchedalmond;
-        
-        
-      
+
     }
+          .project_cat {
+              width: 100%;
+          }
     h4{
         color: white;
     }
-    .grid__item{
-        background-color: black;
-    }
  
-    .inner__grid{
-        display: grid;
-        grid-template-columns: 100%;
-        
-        justify-content:center;
-        align-self: center;
-        color:white;
-        width: 100%;
-      
-      
-    }
+ 
+
     .footer{
         display: grid;
         align-items: center;
